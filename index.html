@@ -8,12 +8,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<<<<<<< Updated upstream
   <script>window._AMapSecurityConfig = { securityJsCode: '3790f30b49fd759b2cbe395c6e1e5792' }</script>
   <script src="https://webapi.amap.com/maps?v=2.0&key=b28d734bba50b92d4b1f8419b8ec9ca6&plugin=AMap.Driving,AMap.AutoComplete"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'Noto Sans SC', sans-serif; }
     .font-serif { font-family: 'Playfair Display', serif; }
+=======
+  <script>window._AMapSecurityConfig = { securityJsCode: "3790f30b49fd759b2cbe395c6e1e5792" }</script>
+  <script src="https://webapi.amap.com/maps?v=2.0&key=b28d734bba50b92d4b1f8419b8ec9ca6&plugin=AMap.Driving,AMap.AutoComplete"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Noto Sans SC", sans-serif; }
+    .font-serif { font-family: "Playfair Display", serif; }
+>>>>>>> Stashed changes
     .hero-gradient { background: linear-gradient(135deg, #0369A1 0%, #0EA5E9 50%, #7DD3FC 100%); }
     .card-hover { transition: all 0.3s ease; }
     .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px -12px rgba(0,0,0,0.2); }
@@ -27,13 +36,19 @@
     .delay-4 { animation-delay: 0.4s; }
     .scroll-indicator { animation: bounce 2s infinite; }
     @keyframes bounce { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+<<<<<<< Updated upstream
     .day-card { transition: all 0.3s ease; }
     .day-card:hover { border-color: #0284C7; }
+=======
+    .day-card { cursor: pointer; transition: all 0.3s ease; }
+    .day-card:hover { border-color: #0284C7; transform: translateY(-2px); box-shadow: 0 8px 24px -8px rgba(0,0,0,0.12); }
+>>>>>>> Stashed changes
     .amap-marker-label { background: transparent !important; border: none !important; box-shadow: none !important; padding: 0 !important; }
   </style>
 </head>
 <body class="bg-gray-50 text-gray-900 antialiased">
 
+<<<<<<< Updated upstream
   <!-- Navbar -->
   <nav class="fixed top-0 left-0 right-0 z-50 glass">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -603,5 +618,667 @@
     if (typeof AMap !== 'undefined') { initMap(); }
     else { window.onLoad = function() { initMap(); }; }
   </script>
+=======
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 right-0 z-50 glass">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center gap-2">
+        <svg class="w-7 h-7 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span class="text-lg font-bold text-sky-800">川西小环线</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-600">
+        <a href="#itinerary" class="hover:text-sky-600 transition-colors">详细行程</a>
+        <a href="#highlights" class="hover:text-sky-600 transition-colors">沿途看点</a>
+        <a href="#map" class="hover:text-sky-600 transition-colors">路线地图</a>
+        <a href="#tips" class="hover:text-sky-600 transition-colors">旅行贴士</a>
+      </div>
+      <button class="md:hidden p-2 text-gray-600 cursor-pointer">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="relative min-h-screen hero-gradient overflow-hidden">
+  <div class="absolute inset-0 opacity-20">
+    <svg class="w-full h-full" viewBox="0 0 1440 600" preserveAspectRatio="xMidYMid slice">
+      <path d="M0,300 L120,250 L240,320 L360,180 L480,280 L600,120 L720,260 L840,160 L960,240 L1080,100 L1200,220 L1320,180 L1440,280 L1440,600 L0,600Z" fill="white"/>
+      <path d="M0,380 L160,310 L320,370 L480,250 L640,340 L800,200 L960,310 L1120,230 L1280,340 L1440,290 L1440,600 L0,600Z" fill="white" opacity="0.6"/>
+    </svg>
+  </div>
+  <div class="absolute -top-40 -right-40 w-96 h-96 rounded-full bg-sky-400/10 blur-3xl"></div>
+  <div class="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-sky-400/10 blur-3xl"></div>
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
+    <div class="w-full pt-20 pb-16">
+      <div class="max-w-4xl">
+        <span class="inline-block px-4 py-1.5 bg-white/15 text-sky-100 text-sm font-medium rounded-full mb-6 animate-in delay-1">📅 2026五一 · 川西自驾计划</span>
+        <h1 class="text-4xl sm:text-5xl md:text-7xl font-black text-white leading-tight mb-6 animate-in delay-2">
+          川西小环线
+          <span class="block text-sky-200 font-serif italic text-3xl sm:text-4xl md:text-5xl font-normal mt-2">Western Sichuan Loop</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-sky-50/80 max-w-2xl mb-8 animate-in delay-3 leading-relaxed">
+          4月29日晚 — 5月4日 · 上海直飞成都，自驾川西秘境<br class="hidden sm:block">
+          四姑娘山 · 丹巴 · 塔公 · 新都桥 · 康定
+        </p>
+        <div class="flex flex-wrap gap-4 mb-10 animate-in delay-3">
+          <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-sky-100 text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            4月29日晚 — 5月4日
+          </div>
+          <div class="flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 text-sky-100 text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            成都出发 · 全程约845km
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4 animate-in delay-4">
+          <a href="#itinerary" class="inline-flex items-center gap-2 px-8 py-3.5 bg-white text-sky-800 font-bold rounded-full hover:bg-sky-50 transition-all shadow-xl cursor-pointer">
+            查看行程 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </a>
+          <a href="#map" class="inline-flex items-center gap-2 px-8 py-3.5 glass text-white font-medium rounded-full hover:bg-white/20 transition-all cursor-pointer">
+            路线地图 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="absolute bottom-8 left-1/2 -translate-x-1/2 scroll-indicator">
+    <svg class="w-6 h-6 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/></svg>
+  </div>
+</section>
+
+<!-- Overview Stats -->
+<section id="overview" class="relative -mt-20 z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="glass-light rounded-2xl shadow-xl p-8 sm:p-10">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+      <div><div class="text-3xl sm:text-4xl font-black text-sky-600">6<span class="text-lg">天</span></div><p class="text-sm text-gray-500 mt-1">川西环线之旅</p></div>
+      <div><div class="text-3xl sm:text-4xl font-black text-sky-600">845<span class="text-lg">km</span></div><p class="text-sm text-gray-500 mt-1">环线总里程</p></div>
+      <div><div class="text-3xl sm:text-4xl font-black text-sky-600">4298<span class="text-lg">m</span></div><p class="text-sm text-gray-500 mt-1">最高海拔（折多山）</p></div>
+      <div><div class="text-3xl sm:text-4xl font-black text-sky-600">6<span class="text-lg">天</span></div><p class="text-sm text-gray-500 mt-1">上海→成都→上海</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Trip Overview -->
+<section class="py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="text-sky-600 font-semibold text-sm tracking-widest uppercase">About The Trip</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mt-3 mb-5">行程亮点</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto text-lg leading-relaxed">
+        五一小长假，从上海直飞成都。<br>
+        自驾深入川西，雪山·草原·藏寨·石林，一路邂逅最壮美的风景。
+      </p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
+      <div class="card-hover p-6 sm:p-8 rounded-xl bg-white shadow-sm border border-gray-100 cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-sky-100 flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">绝美风光</h3>
+        <p class="text-gray-500 leading-relaxed">四姑娘山、雅拉雪山、塔公草原、墨石公园、甲居藏寨，一路都是国家地理级别的视觉盛宴。</p>
+      </div>
+      <div class="card-hover p-6 sm:p-8 rounded-xl bg-white shadow-sm border border-gray-100 cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-orange-100 flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">合理节奏</h3>
+        <p class="text-gray-500 leading-relaxed">成都集散，循序渐进适应海拔。每天车程适中，留足时间深度游玩、拍照打卡，不赶路。</p>
+      </div>
+      <div class="card-hover p-6 sm:p-8 rounded-xl bg-white shadow-sm border border-gray-100 cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-indigo-100 flex items-center justify-center mb-5">
+          <svg class="w-6 h-6 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+        </div>
+        <h3 class="text-xl font-bold text-gray-900 mb-2">自驾随停</h3>
+        <p class="text-gray-500 leading-relaxed">自驾出行，想停就停。遇见美景随时靠边，遇到好的观景台就驻足欣赏，自由自在。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Itinerary Section -->
+<section id="itinerary" class="py-20 sm:py-28 bg-gray-50">
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+  <span class="text-sky-600 font-semibold text-sm tracking-widest uppercase">Itinerary</span>
+  <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mt-3 mb-5">详细行程</h2>
+  <p class="text-gray-500 max-w-2xl mx-auto text-lg">4月29日晚 — 5月4日返程</p>
+</div>
+
+<div class="relative">
+  <div class="hidden sm:block absolute left-8 top-0 bottom-0 w-px bg-gradient-to-b from-sky-400 via-sky-500 to-sky-400"></div>
+
+  <!-- Day 0 -->
+  <div class="relative pl-0 sm:pl-20 mb-10">
+    <div class="hidden sm:flex absolute left-8 w-11 h-11 -translate-x-1/2 rounded-full bg-white border-2 text-sm font-bold shadow-sm" style="border-color:#64748B;color:#64748B">✈</div>
+    <div class="hidden sm:block absolute left-[54px] top-5 w-[26px] h-px bg-gradient-to-r" style="background:linear-gradient(to right, #64748B60, transparent)"></div>
+    <div class="day-card p-6 sm:p-8 rounded-xl bg-white border border-gray-200 shadow-sm" data-day="0" style="--day-color:#64748B;--day-light:#64748B33">
+      <div class="flex flex-wrap items-center gap-3 mb-3">
+        <span class="px-3 py-1 text-xs font-bold rounded-full" style="background:#64748B15;color:#64748B">4月29日 · 晚</span>
+        <span class="text-gray-400 text-sm">✈️ 飞抵成都</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex-1 min-w-0">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">上海 → 成都</h3>
+          <p class="text-gray-500 leading-relaxed mb-4 text-sm">虹桥或浦东机场出发，晚班机飞成都双流机场。抵达后打车前往亚朵酒店（双流川大江安校区店），养精蓄锐，准备次日出发。</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">✈️ 上海→成都 约3h</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🏨 亚朵酒店(双流川大)</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">📍 成都海拔500m</span>
+          </div>
+        </div>
+        <div class="sm:w-56 flex-shrink-0">
+          <div class="flex items-center justify-center h-12 bg-sky-50 rounded-lg text-sm text-sky-700 font-medium"><svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/></svg>上海 ✈ 成都（飞行约3h）</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 1 -->
+  <div class="relative pl-0 sm:pl-20 mb-10">
+    <div class="hidden sm:flex absolute left-8 w-11 h-11 -translate-x-1/2 rounded-full bg-white border-2 text-sm font-bold shadow-sm" style="border-color:#0EA5E9;color:#0EA5E9">1</div>
+    <div class="hidden sm:block absolute left-[54px] top-5 w-[26px] h-px bg-gradient-to-r" style="background:linear-gradient(to right, #0EA5E960, transparent)"></div>
+    <div class="day-card p-6 sm:p-8 rounded-xl bg-white border border-gray-200 shadow-sm" data-day="1" style="--day-color:#0EA5E9;--day-light:#0EA5E933">
+      <div class="flex flex-wrap items-center gap-3 mb-3">
+        <span class="px-3 py-1 text-xs font-bold rounded-full" style="background:#0EA5E915;color:#0EA5E9">4月30日</span>
+        <span class="text-gray-400 text-sm">🚗 自驾首日</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex-1 min-w-0">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">成都 → 四姑娘山</h3>
+          <p class="text-gray-500 leading-relaxed mb-4 text-sm">早餐后退房，从双流出发前往四姑娘山。途经都江堰、映秀，在猫鼻梁观景台第一次眺望四姑娘山全景。下午抵达双桥沟景区，入住被梦叫醒酒店。适应海拔，为明日游玩做准备。</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🚗 215km · 约4h · 过路费46元</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🏨 被梦叫醒酒店(双桥沟)</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🌡️ 海拔500→3200m</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">📸 猫鼻梁观景台</span>
+          </div>
+        </div>
+        <div class="sm:w-56 flex-shrink-0">
+          <svg viewBox="0 0 260 50" class="w-full h-auto" fill="none">
+<rect width="260" height="50" rx="6" fill="#F8FAFC"/>
+<path d="M 20 22 Q 47.5 30, 75 28 Q 102.5 20, 130 22 Q 157.5 30, 185 28 Q 212.5 20, 240 22" stroke="#0EA5E9" stroke-width="2" stroke-linecap="round" fill="none"/>
+<circle cx="20" cy="22" r="4" fill="#0EA5E9" stroke="white" stroke-width="2"/>
+<circle cx="75" cy="28" r="3" fill="#0EA5E9" stroke="white" stroke-width="2"/>
+<circle cx="130" cy="22" r="3" fill="#0EA5E9" stroke="white" stroke-width="2"/>
+<circle cx="185" cy="28" r="3" fill="#0EA5E9" stroke="white" stroke-width="2"/>
+<circle cx="240" cy="22" r="4" fill="#0EA5E9" stroke="white" stroke-width="2"/>
+<text x="20" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">成都</text>
+<text x="75" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">都江堰</text>
+<text x="130" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">映秀</text>
+<text x="185" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">巴郎山</text>
+<text x="240" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">四姑娘山</text>
+<text x="130" y="12" text-anchor="middle" font-size="6.5" fill="#94A3B8">途经 都江堰·映秀·巴郎山</text>
+</svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="relative pl-0 sm:pl-20 mb-10">
+    <div class="hidden sm:flex absolute left-8 w-11 h-11 -translate-x-1/2 rounded-full bg-white border-2 text-sm font-bold shadow-sm" style="border-color:#8B5CF6;color:#8B5CF6">2</div>
+    <div class="hidden sm:block absolute left-[54px] top-5 w-[26px] h-px bg-gradient-to-r" style="background:linear-gradient(to right, #8B5CF660, transparent)"></div>
+    <div class="day-card p-6 sm:p-8 rounded-xl bg-white border border-gray-200 shadow-sm" data-day="2" style="--day-color:#8B5CF6;--day-light:#8B5CF633">
+      <div class="flex flex-wrap items-center gap-3 mb-3">
+        <span class="px-3 py-1 text-xs font-bold rounded-full" style="background:#8B5CF615;color:#8B5CF6">5月1日</span>
+        <span class="text-gray-400 text-sm">🏔️ 藏寨风情</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex-1 min-w-0">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">四姑娘山 → 丹巴</h3>
+          <p class="text-gray-500 leading-relaxed mb-4 text-sm">上午可再进双桥沟游览（观光车到红杉林，雪峰草甸如瑞士风光）。中午出发沿小金川河谷西行，一路欣赏河谷藏寨风光。抵达丹巴后前往甲居藏寨——"中国最美乡村"，体验嘉绒藏族风情。</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🚗 四姑娘山→甲居藏寨 127km · 约3h</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🏡 甲居藏寨→汉庭 17km · 39min</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🏨 汉庭酒店(丹巴店)</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🎫 甲居藏寨门票50元</span>
+          </div>
+        </div>
+        <div class="sm:w-56 flex-shrink-0">
+          <svg viewBox="0 0 260 50" class="w-full h-auto" fill="none">
+<rect width="260" height="50" rx="6" fill="#F8FAFC"/>
+<path d="M 20 22 Q 56.666666666666664 30, 93.33333333333333 28 Q 130 20, 166.66666666666666 22 Q 203.33333333333331 30, 240 28" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" fill="none"/>
+<circle cx="20" cy="22" r="4" fill="#8B5CF6" stroke="white" stroke-width="2"/>
+<circle cx="93.33333333333333" cy="28" r="3" fill="#8B5CF6" stroke="white" stroke-width="2"/>
+<circle cx="166.66666666666666" cy="22" r="3" fill="#8B5CF6" stroke="white" stroke-width="2"/>
+<circle cx="240" cy="28" r="4" fill="#8B5CF6" stroke="white" stroke-width="2"/>
+<text x="20" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">四姑娘山</text>
+<text x="93.33333333333333" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">小金</text>
+<text x="166.66666666666666" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">甲居藏寨</text>
+<text x="240" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">丹巴</text>
+<text x="130" y="12" text-anchor="middle" font-size="6.5" fill="#94A3B8">途经 小金·甲居藏寨</text>
+</svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="relative pl-0 sm:pl-20 mb-10">
+    <div class="hidden sm:flex absolute left-8 w-11 h-11 -translate-x-1/2 rounded-full bg-white border-2 text-sm font-bold shadow-sm" style="border-color:#F472B6;color:#F472B6">3</div>
+    <div class="hidden sm:block absolute left-[54px] top-5 w-[26px] h-px bg-gradient-to-r" style="background:linear-gradient(to right, #F472B660, transparent)"></div>
+    <div class="day-card p-6 sm:p-8 rounded-xl bg-white border border-gray-200 shadow-sm" data-day="3" style="--day-color:#F472B6;--day-light:#F472B633">
+      <div class="flex flex-wrap items-center gap-3 mb-3">
+        <span class="px-3 py-1 text-xs font-bold rounded-full" style="background:#F472B615;color:#F472B6">5月2日</span>
+        <span class="text-gray-400 text-sm">🌟 核心路段</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex-1 min-w-0">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">丹巴 → 新都桥</h3>
+          <p class="text-gray-500 leading-relaxed mb-4 text-sm">这一天是沿途风景最丰富的一段。上午出发先到雅拉雪山观景台远眺雪山，然后游览墨石公园——奇异的高原石林景观如异域星球。再到塔公草原，塔公寺与雅拉雪山相映成辉。傍晚抵达"摄影天堂"新都桥。</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🚗 丹巴→墨石公园 93km · 约2h</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🚗 墨石→塔公 18km · 24min</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🚗 塔公→新都桥 41km · 49min</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🎫 墨石公园60元</span>
+          </div>
+        </div>
+        <div class="sm:w-56 flex-shrink-0">
+          <svg viewBox="0 0 260 50" class="w-full h-auto" fill="none">
+<rect width="260" height="50" rx="6" fill="#F8FAFC"/>
+<path d="M 20 22 Q 47.5 30, 75 28 Q 102.5 20, 130 22 Q 157.5 30, 185 28 Q 212.5 20, 240 22" stroke="#F472B6" stroke-width="2" stroke-linecap="round" fill="none"/>
+<circle cx="20" cy="22" r="4" fill="#F472B6" stroke="white" stroke-width="2"/>
+<circle cx="75" cy="28" r="3" fill="#F472B6" stroke="white" stroke-width="2"/>
+<circle cx="130" cy="22" r="3" fill="#F472B6" stroke="white" stroke-width="2"/>
+<circle cx="185" cy="28" r="3" fill="#F472B6" stroke="white" stroke-width="2"/>
+<circle cx="240" cy="22" r="4" fill="#F472B6" stroke="white" stroke-width="2"/>
+<text x="20" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">丹巴</text>
+<text x="75" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">雅拉雪山</text>
+<text x="130" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">墨石公园</text>
+<text x="185" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">塔公草原</text>
+<text x="240" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">新都桥</text>
+<text x="130" y="12" text-anchor="middle" font-size="6.5" fill="#94A3B8">途经 雅拉雪山·墨石公园·塔公草原</text>
+</svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="relative pl-0 sm:pl-20 mb-10">
+    <div class="hidden sm:flex absolute left-8 w-11 h-11 -translate-x-1/2 rounded-full bg-white border-2 text-sm font-bold shadow-sm" style="border-color:#06B6D4;color:#06B6D4">4</div>
+    <div class="hidden sm:block absolute left-[54px] top-5 w-[26px] h-px bg-gradient-to-r" style="background:linear-gradient(to right, #06B6D460, transparent)"></div>
+    <div class="day-card p-6 sm:p-8 rounded-xl bg-white border border-gray-200 shadow-sm" data-day="4" style="--day-color:#06B6D4;--day-light:#06B6D433">
+      <div class="flex flex-wrap items-center gap-3 mb-3">
+        <span class="px-3 py-1 text-xs font-bold rounded-full" style="background:#06B6D415;color:#06B6D4">5月3日</span>
+        <span class="text-gray-400 text-sm">⛰️ 翻越折多山</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex-1 min-w-0">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">新都桥 → 康定</h3>
+          <p class="text-gray-500 leading-relaxed mb-4 text-sm">上午在新都桥周边自由活动，这片光影天堂值得多拍几张。午后出发翻越"康巴第一关"折多山（海拔4298米），垭口停车俯瞰雪山群峰。下山即到康定，逛情歌广场、吃藏餐，感受溜溜城的夜生活。</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🚗 新都桥→折多山 40km · 50min</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🚗 折多山→康定 38km · 1h11min</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🏨 三秦瑞熹酒店(情歌广场)</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">📸 折多山垭口4298m</span>
+          </div>
+        </div>
+        <div class="sm:w-56 flex-shrink-0">
+          <svg viewBox="0 0 260 50" class="w-full h-auto" fill="none">
+<rect width="260" height="50" rx="6" fill="#F8FAFC"/>
+<path d="M 40 22 Q 85 30, 130 28 Q 175 20, 220 22" stroke="#06B6D4" stroke-width="2" stroke-linecap="round" fill="none"/>
+<circle cx="40" cy="22" r="4" fill="#06B6D4" stroke="white" stroke-width="2"/>
+<circle cx="130" cy="28" r="3" fill="#06B6D4" stroke="white" stroke-width="2"/>
+<circle cx="220" cy="22" r="4" fill="#06B6D4" stroke="white" stroke-width="2"/>
+<text x="40" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">新都桥</text>
+<text x="130" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">折多山</text>
+<text x="220" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">康定</text>
+<text x="130" y="12" text-anchor="middle" font-size="6.5" fill="#94A3B8">途经 折多山垭口·G318</text>
+</svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="relative pl-0 sm:pl-20 ">
+    <div class="hidden sm:flex absolute left-8 w-11 h-11 -translate-x-1/2 rounded-full bg-white border-2 text-sm font-bold shadow-sm" style="border-color:#6366F1;color:#6366F1">5</div>
+    <div class="hidden sm:block absolute left-[54px] top-5 w-[26px] h-px bg-gradient-to-r" style="background:linear-gradient(to right, #6366F160, transparent)"></div>
+    <div class="day-card p-6 sm:p-8 rounded-xl bg-white border border-gray-200 shadow-sm" data-day="5" style="--day-color:#6366F1;--day-light:#6366F133">
+      <div class="flex flex-wrap items-center gap-3 mb-3">
+        <span class="px-3 py-1 text-xs font-bold rounded-full" style="background:#6366F115;color:#6366F1">5月4日</span>
+        <span class="text-gray-400 text-sm">🛫 返程日</span>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-4">
+        <div class="flex-1 min-w-0">
+          <h3 class="text-xl font-bold text-gray-900 mb-2">康定 → 成都 → 上海</h3>
+          <p class="text-gray-500 leading-relaxed mb-4 text-sm">早餐后出发，全程高速回成都。走雅康高速→成雅高速，预计中午抵达双流机场。还车后搭下午航班飞回上海，结束难忘的川西之旅。</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🚗 252km · 约3h10min · 过路费133元</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">🛫 成都→上海（下午航班）</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-600 text-xs rounded-full">📍 成都双流机场还车</span>
+          </div>
+        </div>
+        <div class="sm:w-56 flex-shrink-0">
+          <svg viewBox="0 0 260 50" class="w-full h-auto" fill="none">
+<rect width="260" height="50" rx="6" fill="#F8FAFC"/>
+<path d="M 40 22 Q 85 30, 130 28 Q 175 20, 220 22" stroke="#6366F1" stroke-width="2" stroke-linecap="round" fill="none"/>
+<circle cx="40" cy="22" r="4" fill="#6366F1" stroke="white" stroke-width="2"/>
+<circle cx="130" cy="28" r="3" fill="#6366F1" stroke="white" stroke-width="2"/>
+<circle cx="220" cy="22" r="4" fill="#6366F1" stroke="white" stroke-width="2"/>
+<text x="40" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">康定</text>
+<text x="130" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">雅安</text>
+<text x="220" y="42" text-anchor="middle" font-size="8" fill="#64748B" font-weight="500">成都</text>
+<text x="130" y="12" text-anchor="middle" font-size="6.5" fill="#94A3B8">途经 雅康高速·成雅高速</text>
+</svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</section>
+
+
+<!-- Highlights Section -->
+<section id="highlights" class="py-20 sm:py-28 bg-white">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="text-sky-600 font-semibold text-sm tracking-widest uppercase">Highlights</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mt-3 mb-5">沿途风景</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto text-lg">一路穿越川西最经典的景观走廊</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="group rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover cursor-pointer">
+        <div class="h-48 relative overflow-hidden bg-gradient-to-br from-blue-600 to-indigo-900">
+          <svg class="absolute inset-0 w-24 h-24 m-auto text-white/15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4l6 14H6l6-14z"/></svg>
+          <img src="https://p1.ssl.qhmsg.com/t019d4980c09058fc90.jpg" alt="四姑娘山" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute bottom-3 left-3 px-2 py-0.5 bg-black/50 text-white text-xs rounded backdrop-blur-sm">东方阿尔卑斯</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">四姑娘山 · 双桥沟</h3>
+          <p class="text-sm text-gray-500">蜀山之后，双桥沟内雪峰林立、草甸如茵。观光车直达红杉林，海拔3840米的雪山盛宴。</p>
+        </div>
+      </div>
+      <div class="group rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover cursor-pointer">
+        <div class="h-48 relative overflow-hidden bg-gradient-to-br from-indigo-600 to-slate-800">
+          <svg class="absolute inset-0 w-24 h-24 m-auto text-white/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/></svg>
+          <img src="https://images.unsplash.com/photo-h1sIFPamC30?auto=format&fit=crop&w=600&h=400&q=80" alt="墨石公园" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute bottom-3 left-3 px-2 py-0.5 bg-black/50 text-white text-xs rounded backdrop-blur-sm">高原石林</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">墨石公园</h3>
+          <p class="text-sm text-gray-500">中国唯一高原石林景观，灰黑色糜棱岩如异域星球般奇幻。拍照出片率极高。</p>
+        </div>
+      </div>
+      <div class="group rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover cursor-pointer">
+        <div class="h-48 relative overflow-hidden bg-gradient-to-br from-green-500 to-yellow-400">
+          <svg class="absolute inset-0 w-24 h-24 m-auto text-white/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 21l6-6m3-3l2-2M21 3l-6 6m0 0l-3 3m3-3l3-3m-3 3l-3 3"/></svg>
+          <img src="https://images.unsplash.com/photo-lGdetSz6dmo?auto=format&fit=crop&w=600&h=400&q=80" alt="塔公草原" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute bottom-3 left-3 px-2 py-0.5 bg-black/50 text-white text-xs rounded backdrop-blur-sm">雅拉雪山</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">塔公草原</h3>
+          <p class="text-sm text-gray-500">塔公寺与雅拉雪山相映成辉，"佛光普照"的圣洁之地。5月草原初绿，野花渐开。</p>
+        </div>
+      </div>
+      <div class="group rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover cursor-pointer">
+        <div class="h-48 relative overflow-hidden bg-gradient-to-br from-orange-600 to-sky-500">
+          <svg class="absolute inset-0 w-24 h-24 m-auto text-white/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 12l2-2m0 0l3-3 3-3 4 4 3 3m-9 6l2-2m2 2l2-2m-4-4v.01"/></svg>
+          <img src="https://images.unsplash.com/photo-87pBv5Lt6HY?auto=format&fit=crop&w=600&h=400&q=80" alt="甲居藏寨" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute bottom-3 left-3 px-2 py-0.5 bg-black/50 text-white text-xs rounded backdrop-blur-sm">中国最美乡村</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">甲居藏寨</h3>
+          <p class="text-sm text-gray-500">嘉绒藏族传统村落，山寨依山而建，红白相间的藏寨点缀在绿树梨花间。</p>
+        </div>
+      </div>
+      <div class="group rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover cursor-pointer">
+        <div class="h-48 relative overflow-hidden bg-gradient-to-br from-sky-600 to-orange-700">
+          <svg class="absolute inset-0 w-24 h-24 m-auto text-white/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M2 12l2-2m0 0l2-2m-2 2v10m0-10l2-2m-2 2l-2-2m10 10l-2-2m2 2l2-2m-2 2v-6m2-2l2-2m-2 2l-2-2m2 2v10"/></svg>
+          <img src="https://images.unsplash.com/photo-W13tPC6A8-Q?auto=format&fit=crop&w=600&h=400&q=80" alt="新都桥" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute bottom-3 left-3 px-2 py-0.5 bg-black/50 text-white text-xs rounded backdrop-blur-sm">摄影天堂</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">新都桥</h3>
+          <p class="text-sm text-gray-500">光影交织的摄影天堂，高原田园与藏式民居的完美画卷。午后光线最为迷人。</p>
+        </div>
+      </div>
+      <div class="group rounded-xl overflow-hidden shadow-sm border border-gray-100 card-hover cursor-pointer">
+        <div class="h-48 relative overflow-hidden bg-gradient-to-br from-slate-600 to-slate-800">
+          <svg class="absolute inset-0 w-24 h-24 m-auto text-white/15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 22h20L12 2zm0 4l7 14H5l7-14z"/><path d="M12 10l-3 6h6l-3-6z" opacity="0.5"/></svg>
+          <img src="https://images.unsplash.com/photo-E909Oe4N3pM?auto=format&fit=crop&w=600&h=400&q=80" alt="折多山" class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" onerror="this.remove()">
+          <span class="absolute bottom-3 left-3 px-2 py-0.5 bg-black/50 text-white text-xs rounded backdrop-blur-sm">康巴第一关</span>
+        </div>
+        <div class="p-5">
+          <h3 class="text-lg font-bold text-gray-900 mb-1">折多山</h3>
+          <p class="text-sm text-gray-500">海拔4298米的"康巴第一关"，翻越即入青藏高原。垭口经幡猎猎，云海雪山壮阔。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Route Map -->
+<section id="map" class="py-20 sm:py-28 bg-gray-50">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <span class="text-sky-600 font-semibold text-sm tracking-widest uppercase">Route Map</span>
+    <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mt-3 mb-2">路线地图</h2>
+    <p class="text-gray-500 mb-2">高德地图 · 全程约845km · 驾车环线 · 点击下方行程卡片可聚焦对应路段</p>
+    <p class="text-xs text-gray-400 mb-6">💡 在"详细行程"中点击任意一天卡片，地图将自动聚焦到当天的路线</p>
+    <div id="map-container" class="w-full h-[400px] sm:h-[500px] rounded-2xl shadow-lg border border-gray-200 overflow-hidden"></div>
+    <div class="mt-4 flex flex-wrap justify-center gap-x-5 gap-y-1.5 text-xs text-gray-400">
+      <span class="flex items-center gap-1.5"><span class="w-3 h-0.5 rounded" style="background:#0EA5E9"></span> D1 成都→四姑娘山</span>
+      <span class="flex items-center gap-1.5"><span class="w-3 h-0.5 rounded" style="background:#8B5CF6"></span> D2 四姑娘山→丹巴</span>
+      <span class="flex items-center gap-1.5"><span class="w-3 h-0.5 rounded" style="background:#F472B6"></span> D3 丹巴→新都桥</span>
+      <span class="flex items-center gap-1.5"><span class="w-3 h-0.5 rounded" style="background:#06B6D4"></span> D4 新都桥→康定</span>
+      <span class="flex items-center gap-1.5"><span class="w-3 h-0.5 rounded" style="background:#6366F1"></span> D5 康定→成都</span>
+    </div>
+  </div>
+</section>
+
+<!-- Travel Tips -->
+<section id="tips" class="py-20 sm:py-28 bg-white">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="text-sky-600 font-semibold text-sm tracking-widest uppercase">Travel Tips</span>
+      <h2 class="text-3xl sm:text-4xl font-black text-gray-900 mt-3 mb-5">旅行贴士</h2>
+      <p class="text-gray-500 max-w-2xl mx-auto text-lg">出发前需要了解的一些事</p>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6">
+      <div class="p-6 rounded-xl bg-gray-50 border border-gray-100">
+        <div class="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">高原反应</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">行程最高海拔4298m（折多山），第一晚四姑娘山3200m已属高海拔。建议提前一周服用红景天，到达后避免剧烈运动，多喝水，备好氧气瓶和常用药品。</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-50 border border-gray-100">
+        <div class="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">天气与衣物</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">川西高原昼夜温差大，5月白天约15-20°C，夜间可降至0°C。建议携带冲锋衣、抓绒衣、防晒帽和墨镜。高原紫外线强烈，务必做好防晒。折多山可能遇雪。</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-50 border border-gray-100">
+        <div class="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">路况提示</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">整体路况良好，大部分为柏油路。折多山路段弯道多可能起雾，建议SUV车型。中国熊猫大道（成都→四姑娘山段）风景优美但注意落石。下载离线地图备用。</p>
+      </div>
+      <div class="p-6 rounded-xl bg-gray-50 border border-gray-100">
+        <div class="w-10 h-10 rounded-lg bg-sky-100 flex items-center justify-center mb-4">
+          <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h3 class="font-bold text-gray-900 mb-2">费用预算</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">租车+油费过路费约1500元，住宿每天200-400元/间（五一可能上浮），景区门票：双桥沟80元、墨石公园60元、甲居藏寨50元。人均预算约2500-3500元。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-400 py-12">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <svg class="w-6 h-6 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span class="text-white font-bold">川西小环线旅行</span>
+      </div>
+      <p class="text-sm">© 2026 川西小环线 · 五一假期之旅 &mdash; 用旅行，邂逅最美的风景</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// ===== Hide Broken Images =====
+(function() {
+  function hideBroken() {
+    document.querySelectorAll('#highlights img').forEach(function(img) {
+      if (img.complete && img.naturalWidth === 0) img.remove();
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', hideBroken);
+  } else {
+    hideBroken();
+  }
+  window.addEventListener('load', hideBroken);
+})();
+
+// ===== Mobile Menu Toggle =====
+const menuBtn = document.querySelector('.md\\:hidden.p-2');
+const navLinks = document.querySelector('.hidden.md\\:flex');
+let mobileNav = null;
+
+if (menuBtn && navLinks) {
+  menuBtn.addEventListener('click', function() {
+    if (mobileNav) { mobileNav.remove(); mobileNav = null; return; }
+    mobileNav = document.createElement('div');
+    mobileNav.className = 'md:hidden bg-white/95 backdrop-blur-md border-t border-gray-200 shadow-lg';
+    mobileNav.innerHTML = navLinks.innerHTML.split('</a>').map(function(a) {
+      var match = a.match(/href="([^"]+)"[^>]*>([^<]+)/);
+      if (!match) return '';
+      return '<a href="' + match[1] + '" class="block px-6 py-3 text-gray-700 hover:text-sky-600 hover:bg-sky-50 font-medium transition-colors">' + match[2] + '</a>';
+    }).join('');
+    mobileNav.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() { if (mobileNav) { mobileNav.remove(); mobileNav = null; } });
+    });
+    menuBtn.parentElement.after(mobileNav);
+  });
+}
+
+// ===== Smooth Scroll =====
+document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+  link.addEventListener('click', function(e) {
+    var id = this.getAttribute('href');
+    if (id === '#') return;
+    var target = document.querySelector(id);
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+
+// ===== AMap Map =====
+function initMap() {
+  var map = new AMap.Map('map-container', {
+    zoom: 8, center: [102.2, 30.6],
+    viewMode: '2D', mapStyle: 'amap://styles/fresh', showIndoorMap: false
+  });
+
+  // Overnight stop points (hotels)
+  var points = [
+    { name: '成都', pos: [103.998203, 30.573583], desc: '亚朵酒店(双流川大)' },
+    { name: '四姑娘山', pos: [102.788476, 31.048046], desc: '被梦叫醒酒店(双桥沟)' },
+    { name: '丹巴', pos: [101.901629, 30.876347], desc: '汉庭酒店(丹巴店)' },
+    { name: '新都桥', pos: [101.513065, 30.032119], desc: '七摄藏乡酒店' },
+    { name: '康定', pos: [101.979375, 30.054325], desc: '三秦瑞熹酒店(情歌广场)' }
+  ];
+
+  // Custom markers
+  points.forEach(function(p) {
+    var color = (p.name === '成都') ? '#EA580C' : '#0EA5E9';
+    var bubble = '<div style="position:relative;background:' + color + ';color:#fff;padding:5px 14px;border-radius:8px;font-size:12px;font-weight:600;white-space:nowrap;line-height:1.3">' + p.name + '<span style="position:absolute;bottom:-5px;left:50%;transform:translateX(-50%);width:0;height:0;border-left:5px solid transparent;border-right:5px solid transparent;border-top:5px solid ' + color + '"></span></div>';
+    var marker = new AMap.Marker({
+      position: p.pos, title: p.name,
+      content: '<div style="width:14px;height:14px;background:#fff;border:3px solid ' + color + ';border-radius:50%"></div>',
+      offset: new AMap.Pixel(-7, -7),
+      label: { content: bubble, direction: 'top', offset: new AMap.Pixel(0, -6) }
+    });
+    marker.setMap(map);
+    var info = new AMap.InfoWindow({
+      content: '<div style="padding:6px 10px;font-size:13px"><strong>' + p.name + '</strong><br><span style="color:#888">' + p.desc + '</span></div>',
+      offset: new AMap.Pixel(0, -30)
+    });
+    marker.on('click', function() { info.open(map, p.pos); });
+  });
+
+  // Route data for each day
+  var dayRoutes = [
+    { from: 0, to: 1, wps: [],                    color: '#0EA5E9', label: 'D1 成都→四姑娘山', center: [103.2, 30.9], zoom: 10 },
+    { from: 1, to: 2, wps: [[101.862684,30.939766]], color: '#8B5CF6', label: 'D2 四姑娘山→丹巴',  center: [102.3, 31.0], zoom: 10 },
+    { from: 2, to: 3, wps: [[101.542400,30.444886],[101.554960,30.329930]], color: '#F472B6', label: 'D3 丹巴→新都桥',  center: [101.5, 30.5], zoom: 10 },
+    { from: 3, to: 4, wps: [[101.805834,30.067260]], color: '#06B6D4', label: 'D4 新都桥→康定',  center: [101.6, 30.1], zoom: 11 },
+    { from: 4, to: 0, wps: [],                    color: '#6366F1', label: 'D5 康定→成都',    center: [102.8, 30.4], zoom: 10 }
+  ];
+
+  // Store all polylines for highlight toggle
+  var allPolylines = [];
+
+  // Draw driving routes
+  AMap.plugin(['AMap.Driving'], function() {
+    var total = dayRoutes.length, done = 0;
+
+    dayRoutes.forEach(function(day, idx) {
+      // Convert waypoints from [lng,lat] array to points array for AMap
+      var wp = day.wps.length > 0 ? { waypoints: day.wps } : {};
+      new AMap.Driving({ policy: AMap.DrivingPolicy.LEAST_TIME })
+        .search(points[day.from].pos, points[day.to].pos, wp, function(status, result) {
+          if (status === 'complete' && result.routes && result.routes[0]) {
+            var fromPt = new AMap.LngLat(points[day.from].pos[0], points[day.from].pos[1]);
+            var toPt = new AMap.LngLat(points[day.to].pos[0], points[day.to].pos[1]);
+            var path = [fromPt];
+            result.routes[0].steps.forEach(function(s) { path = path.concat(s.path); });
+            path.push(toPt);
+
+            var polyline = new AMap.Polyline({
+              path: path, strokeColor: day.color, strokeWeight: 6, strokeOpacity: 0.9,
+              borderWeight: 2, outlineColor: '#ffffff', lineJoin: 'round', lineCap: 'round',
+              showDir: true, map: map
+            });
+            allPolylines.push({ polyline: polyline, dayIdx: idx });
+          }
+          done++;
+          if (done === total) map.setFitView(null, false, [50, 50, 50, 50]);
+        });
+    });
+  });
+
+  // ===== Day Card → Map Focus =====
+  window.focusDay = function(dayIndex) {
+    if (dayIndex === 0) return; // Day 0 is flight, skip
+    var routeIdx = dayIndex - 1; // Map dayRoutes index (0-based driving days)
+    if (routeIdx < 0 || routeIdx >= dayRoutes.length) return;
+    var r = dayRoutes[routeIdx];
+    map.setZoomAndCenter(r.zoom, r.center, true, function() {
+      // Highlight selected route, dim others
+      allPolylines.forEach(function(item) {
+        var isActive = (item.dayIdx === routeIdx);
+        item.polyline.setOptions({
+          strokeOpacity: isActive ? 0.9 : 0.12,
+          strokeWeight: isActive ? 6 : 2
+        });
+      });
+    });
+  };
+
+  // Bind day card clicks
+  document.querySelectorAll('.day-card').forEach(function(card) {
+    card.addEventListener('click', function() {
+      var day = parseInt(this.getAttribute('data-day'));
+      if (!isNaN(day)) focusDay(day);
+    });
+  });
+}
+
+if (typeof AMap !== 'undefined') { initMap(); }
+else { window.onLoad = function() { initMap(); }; }
+</script>
+>>>>>>> Stashed changes
 </body>
 </html>
